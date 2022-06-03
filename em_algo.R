@@ -104,8 +104,8 @@ ggplot() +
   geom_histogram(data = data.frame(coin_outframe$Masked), aes(x = coin_outframe$Masked), binwidth = 1)+
   geom_line(data = binomplot, aes(x = xvar, y = denone), color = colval[1], size = 3) +
   geom_line(data = binomplot, aes(x = xvar, y = dentwo), color = colval[2], size = 3) +
-  geom_line(data = binomplot, aes(x = xvar, y = dencomb), color = colval[3], size = 3) +
-  labs(x = "Number of Heads from 10 Coin Flips",
+  geom_line(data = binomplot, aes(x = xvar, y = dencomb), color = colval[3], size = 1.5) +
+  labs(x = "Number of Heads from 100 Coin Flips",
        y = "Count",
        title = "Binomial Mixture Results") +
   theme_bw()
